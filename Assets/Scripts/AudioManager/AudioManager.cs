@@ -92,4 +92,14 @@ public class AudioManager : MonoBehaviour
             }
         }
     }
+
+    public float GetSoundVolume()
+    {
+        return PlayerPrefs.GetFloat(PLAYER_PREFS_SOUND_VOLUME);
+    }
+
+    public float GetMusicVolume()
+    {
+        return PlayerPrefs.GetFloat(PLAYER_PREFS_MUSIC_VOLUME);
+    }
 }
