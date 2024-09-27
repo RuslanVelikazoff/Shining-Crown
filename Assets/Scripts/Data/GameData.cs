@@ -7,6 +7,8 @@ public class GameData
 
     public bool purchasedShield;
     public bool purchasedSphere;
+
+    public bool[] achievementComplete = new bool[3];
     
     public GameData()
     {
@@ -24,5 +26,9 @@ public class GameData
 
         purchasedShield = false;
         purchasedSphere = false;
+
+        achievementComplete[0] = false;
+        achievementComplete[1] = false;
+        achievementComplete[2] = false;
     }
 }
