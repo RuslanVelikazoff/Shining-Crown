@@ -9,6 +9,9 @@ public class GameData
     public bool purchasedSphere;
 
     public bool[] achievementComplete = new bool[3];
+
+    public bool[] levelUnlock = new bool[8];
+    public bool[] levelCompleted = new bool[8];
     
     public GameData()
     {
@@ -30,5 +33,23 @@ public class GameData
         achievementComplete[0] = false;
         achievementComplete[1] = false;
         achievementComplete[2] = false;
+
+        levelUnlock[0] = true;
+        levelUnlock[1] = false;
+        levelUnlock[2] = false;
+        levelUnlock[3] = false;
+        levelUnlock[4] = false;
+        levelUnlock[5] = false;
+        levelUnlock[6] = false;
+        levelUnlock[7] = false;
+
+        levelCompleted[0] = false;
+        levelCompleted[1] = false;
+        levelCompleted[2] = false;
+        levelCompleted[3] = false;
+        levelCompleted[4] = false;
+        levelCompleted[5] = false;
+        levelCompleted[6] = false;
+        levelCompleted[7] = false;
     }
 }
