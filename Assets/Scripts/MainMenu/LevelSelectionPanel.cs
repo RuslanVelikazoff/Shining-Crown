@@ -3,12 +3,19 @@ using UnityEngine.UI;
 
 public class LevelSelectionPanel : MonoBehaviour
 {
-    [SerializeField] private Button backButton;
-    [SerializeField] private GameObject mainPanel;
+    [SerializeField] 
+    private Button backButton;
+    [SerializeField] 
+    private GameObject mainPanel;
 
-    [SerializeField] private Button[] levelButton;
-    [SerializeField] private GameObject[] lockGameObject;
-    [SerializeField] private Slider progressSlider;
+    [Space(13)]
+    
+    [SerializeField]
+    private Button[] levelButton;
+    [SerializeField]
+    private GameObject[] lockGameObject;
+    [SerializeField] 
+    private Slider progressSlider;
 
     private int maxProgress = 7;
     private int currentProgress;
