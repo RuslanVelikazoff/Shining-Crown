@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour
 
     public void LoseGame()
     {
+        AudioManager.Instance.Play("Lose");
         losePanel.SetActive(true);
         UpdateLeaderboard();
         CrystalData.Instance.PlusCrystal(CrystalManager.Instance.GetCrystalAmount());
@@ -39,6 +40,7 @@ public class GameManager : MonoBehaviour
 
     public void WinGame()
     {
+        AudioManager.Instance.Play("Win");
         winPanel.SetActive(true);
         UpdateLeaderboard();
         CrystalData.Instance.PlusCrystal(CrystalManager.Instance.GetCrystalAmount());

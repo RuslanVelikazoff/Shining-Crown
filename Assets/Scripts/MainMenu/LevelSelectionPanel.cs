@@ -17,7 +17,7 @@ public class LevelSelectionPanel : MonoBehaviour
     [SerializeField] 
     private Slider progressSlider;
 
-    private int maxProgress = 7;
+    private int maxProgress = 8;
     private int currentProgress;
 
     private void OnEnable()
@@ -150,10 +150,9 @@ public class LevelSelectionPanel : MonoBehaviour
         {
             if (LevelData.Instance.IsLevelCompleted(i))
             {
-                currentProgress = i;
+                currentProgress = i + 1;
+                progressSlider.value = currentProgress;
             }
         }
-
-        progressSlider.value = currentProgress;
     }
 }

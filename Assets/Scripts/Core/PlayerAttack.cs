@@ -10,7 +10,8 @@ public class PlayerAttack : MonoBehaviour
     
     private Animator playerAnimator;
 
-    [SerializeField] private SpawnPlayer spawnPlayer;
+    [SerializeField] 
+    private SpawnPlayer spawnPlayer;
 
     private void Start()
     {

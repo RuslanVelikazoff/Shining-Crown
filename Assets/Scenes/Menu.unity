@@ -3882,6 +3882,30 @@ MonoBehaviour:
     volume: 0
     pitch: 0
     source: {fileID: 0}
+  - name: Hit
+    clip: {fileID: 0}
+    loop: 0
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: Crystal
+    clip: {fileID: 0}
+    loop: 0
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: Win
+    clip: {fileID: 0}
+    loop: 0
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: Lose
+    clip: {fileID: 0}
+    loop: 0
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
 --- !u!4 &328371104
 Transform:
   m_ObjectHideFlags: 0

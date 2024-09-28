@@ -1,13 +1,21 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class HealthBarManager : MonoBehaviour
 {
+    public static HealthBarManager Instance { get; private set; }
+
     [SerializeField] 
     private Slider healthBar;
     
     private int maxHealth;
     private int currentHealth;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     private void Start()
     {
