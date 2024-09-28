@@ -18,6 +18,11 @@ public class WinPanel : MonoBehaviour
         WinButtonClickAction();
     }
 
+    public void PauseGame()
+    {
+        Time.timeScale = 0f;
+    }
+
     private void SetCrystalText()
     {
         crystalText.text = CrystalManager.Instance.GetCrystalAmount().ToString();

@@ -32,7 +32,7 @@ public class StoreData : MonoBehaviour
 
         PlayerPrefs.GetInt("SelectedKnight", 0);
         PlayerPrefs.GetInt("PurchasedShield", 0);
-        PlayerPrefs.GetInt("PurchasedShield", 0);
+        PlayerPrefs.GetInt("PurchasedSphere", 0);
         
         for (int i = 0; i < _selectedKnight.Length; i++)
         {

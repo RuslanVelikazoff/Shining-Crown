@@ -12,6 +12,12 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject winPanel;
 
+    [Space(13)]
+    
+    [SerializeField]
+    private int currentLevelIndex;
+    private int maxLevelIndex = 7;
+
     private string publicLeaderboardKey = "82ae937c1c7825497578b476d889d7342c0f6a68112829af853420d8ab1bd2db";
 
     private void Awake()
@@ -22,21 +28,30 @@ public class GameManager : MonoBehaviour
     public void PauseGame()
     {
         pausePanel.SetActive(true);
-        Time.timeScale = 0f;
     }
 
     public void LoseGame()
     {
-        Time.timeScale = 0f;
         losePanel.SetActive(true);
         UpdateLeaderboard();
+        CrystalData.Instance.PlusCrystal(CrystalManager.Instance.GetCrystalAmount());
     }
 
     public void WinGame()
     {
-        Time.timeScale = 0f;
         winPanel.SetActive(true);
         UpdateLeaderboard();
+        CrystalData.Instance.PlusCrystal(CrystalManager.Instance.GetCrystalAmount());
+
+        if (currentLevelIndex < maxLevelIndex)
+        {
+            LevelData.Instance.CompleteLevel(currentLevelIndex + 1);
+        }
+
+        if (currentLevelIndex == maxLevelIndex)
+        {
+            LevelData.Instance.CompleteLevel(currentLevelIndex);
+        }
     }
 
     private void UpdateLeaderboard()

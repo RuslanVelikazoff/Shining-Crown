@@ -14,7 +14,12 @@ public class PausePanel : MonoBehaviour
     {
         PauseButtonClickAction();
     }
-    
+
+    public void PauseGame()
+    {
+        Time.timeScale = 0f;
+    }
+
     private void PauseButtonClickAction()
     {
         if (resumeButton != null)

@@ -80,4 +80,10 @@ public class LevelData : MonoBehaviour
     {
         return _levelCompleted[index];
     }
+
+    public void CompleteLevel(int index)
+    {
+        _levelUnlock[index] = true;
+        _levelCompleted[index - 1] = true;
+    }
 }

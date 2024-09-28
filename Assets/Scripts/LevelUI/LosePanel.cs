@@ -13,6 +13,11 @@ public class LosePanel : MonoBehaviour
         LoseButtonClickAction();
     }
 
+    public void PauseGame()
+    {
+        Time.timeScale = 0f;
+    }
+
     private void LoseButtonClickAction()
     {
         if (restartButton != null)
