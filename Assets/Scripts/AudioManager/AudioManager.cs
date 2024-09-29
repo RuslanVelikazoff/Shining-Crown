@@ -32,11 +32,11 @@ public class AudioManager : MonoBehaviour
 
             if (s.name == "Theme")
             {
-                s.source.volume = s.volume = PlayerPrefs.GetFloat(PLAYER_PREFS_MUSIC_VOLUME, 0f);
+                s.source.volume = s.volume = PlayerPrefs.GetFloat(PLAYER_PREFS_MUSIC_VOLUME, 1f);
             }
             else
             {
-                s.source.volume = s.volume = PlayerPrefs.GetFloat(PLAYER_PREFS_SOUND_VOLUME, 0f);
+                s.source.volume = s.volume = PlayerPrefs.GetFloat(PLAYER_PREFS_SOUND_VOLUME, 1f);
             }
         }
     }
@@ -71,7 +71,7 @@ public class AudioManager : MonoBehaviour
             }
             else
             {
-                s.source.volume = s.volume = PlayerPrefs.GetFloat(PLAYER_PREFS_SOUND_VOLUME, 0f);
+                s.source.volume = s.volume = PlayerPrefs.GetFloat(PLAYER_PREFS_SOUND_VOLUME, 1f);
             }
         }
     }
@@ -84,7 +84,7 @@ public class AudioManager : MonoBehaviour
         {
             if (s.name == "Theme")
             {
-                s.source.volume = s.volume = PlayerPrefs.GetFloat(PLAYER_PREFS_MUSIC_VOLUME, 0f);
+                s.source.volume = s.volume = PlayerPrefs.GetFloat(PLAYER_PREFS_MUSIC_VOLUME, 1f);
             }
             else
             {
@@ -95,11 +95,11 @@ public class AudioManager : MonoBehaviour
 
     public float GetSoundVolume()
     {
-        return PlayerPrefs.GetFloat(PLAYER_PREFS_SOUND_VOLUME);
+        return PlayerPrefs.GetFloat(PLAYER_PREFS_SOUND_VOLUME, 1f);
     }
 
     public float GetMusicVolume()
     {
-        return PlayerPrefs.GetFloat(PLAYER_PREFS_MUSIC_VOLUME);
+        return PlayerPrefs.GetFloat(PLAYER_PREFS_MUSIC_VOLUME, 1f);
     }
 }

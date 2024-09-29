@@ -3871,8 +3871,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: Theme
-    clip: {fileID: 0}
-    loop: 0
+    clip: {fileID: 8300000, guid: 32efc18f4927d9f4b88bc64d9f884718, type: 3}
+    loop: 1
     volume: 0
     pitch: 0
     source: {fileID: 0}
@@ -3883,25 +3883,25 @@ MonoBehaviour:
     pitch: 0
     source: {fileID: 0}
   - name: Hit
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: df4465d5e566a02448d7ea9cdf8fab95, type: 3}
     loop: 0
     volume: 0
     pitch: 0
     source: {fileID: 0}
   - name: Crystal
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: aab535a537aeb994392d3e8c8ed82a9b, type: 3}
     loop: 0
     volume: 0
     pitch: 0
     source: {fileID: 0}
   - name: Win
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: c5197eb5e18aa33408effc3646e16255, type: 3}
     loop: 0
     volume: 0
     pitch: 0
     source: {fileID: 0}
   - name: Lose
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: bbe535a5a022feb40a0377483b0b6107, type: 3}
     loop: 0
     volume: 0
     pitch: 0

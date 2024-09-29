@@ -15,7 +15,7 @@ public class GameData
     
     public GameData()
     {
-        crystal = 1200;
+        crystal = 0;
 
         purchasedKnight[0] = true;
         purchasedKnight[1] = false;
